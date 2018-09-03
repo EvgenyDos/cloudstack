@@ -1,0 +1,9 @@
+# This is the place to install packages that all hosts will have instaled
+- name: Install Essential Common Packages 
+  yum: name={{ item }} state=present update_cache=yes
+  with_items:
+    - nano
+    - ntp
+    - sysstat
+    - chrony
+    - dstat

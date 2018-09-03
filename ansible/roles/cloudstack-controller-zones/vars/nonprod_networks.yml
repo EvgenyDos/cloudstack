@@ -1,0 +1,361 @@
+networks:
+  10.73.96.0-DEV1:
+    name: 10.73.96.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 500
+    startip: 10.73.96.20
+    endip: 10.73.98.200
+    gateway: 10.73.96.1
+    netmask: 255.255.252.0
+  10.71.0.0-DEV1:
+    name: 10.71.0.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 501
+    startip: 10.71.0.20
+    endip: 10.71.2.250
+    gateway: 10.71.0.1
+    netmask: 255.255.252.0
+  10.73.100.0-DEV1:
+    name: 10.73.100.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 501
+    startip: 10.73.100.20
+    endip: 10.73.102.250
+    gateway: 10.73.100.1
+    netmask: 255.255.252.0
+  10.73.128.0-DEV1:
+    name: 10.73.128.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 501
+    startip: 10.73.128.20
+    endip: 10.73.130.250
+    gateway: 10.73.128.1
+    netmask: 255.255.252.0
+  10.73.108.0-DEV1:
+    name: 10.73.108.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 503
+    startip: 10.73.108.20
+    endip: 10.73.110.20
+    gateway: 10.73.108.1
+    netmask: 255.255.252.0
+  10.71.4.0-DEV1:
+    name: 10.71.4.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 503
+    startip: 10.71.4.20
+    endip: 10.71.6.200
+    gateway: 10.71.4.1
+    netmask: 255.255.252.0
+  10.73.132.0-DEV1:
+    name: 10.73.132.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 503
+    startip: 10.73.132.20
+    endip: 10.73.134.200
+    gateway: 10.73.132.1
+    netmask: 255.255.252.0
+  10.73.116.0-DEV1:
+    name: 10.73.116.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 505
+    startip: 10.73.116.20
+    endip: 10.73.117.250
+    gateway: 10.73.116.1
+    netmask: 255.255.252.0
+  10.73.224.0-DEV1:
+    name: 10.73.224.0/20
+    zone: DEV1
+    domain: ROOT
+    vlan: 506
+    startip: 10.73.224.20
+    endip: 10.73.226.200
+    gateway: 10.73.224.1
+    netmask: 255.255.240.0
+  10.73.192.0-DEV1:
+    name: 10.73.192.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 507
+    startip: 10.73.192.20
+    endip: 10.73.194.200
+    gateway: 10.73.192.1
+    netmask: 255.255.252.0
+  10.73.196.0-DEV1:
+    name: 10.73.196.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 508
+    startip: 10.73.196.20
+    endip: 10.73.197.200
+    gateway: 10.73.196.1
+    netmask: 255.255.254.0
+  10.73.198.0-DEV1:
+    name: 10.73.198.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 509
+    startip: 10.73.198.20
+    endip: 10.73.199.200
+    gateway: 10.73.198.1
+    netmask: 255.255.254.0
+  10.71.126.0-DEV1:
+    name: 10.71.126.0/24
+    zone: DEV1
+    domain: ROOT
+    vlan: 511
+    startip: 10.71.126.20
+    endip: 10.71.126.200
+    gateway: 10.71.126.1
+    netmask: 255.255.255.0
+  10.73.255.0-DEV1:
+    name: 10.73.255.0/24
+    zone: DEV1
+    domain: ROOT
+    vlan: 511
+    startip: 10.73.255.20
+    endip: 10.73.255.200
+    gateway: 10.73.255.1
+    netmask: 255.255.255.0
+  10.71.24.0-DEV1:
+    name: 10.71.24.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 513
+    startip: 10.71.24.20
+    endip: 10.71.26.200
+    gateway: 10.71.24.1
+    netmask: 255.255.252.0
+  10.73.202.0-DEV1:
+    name: 10.73.202.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 513
+    startip: 10.73.202.20
+    endip: 10.73.203.200
+    gateway: 10.73.202.1
+    netmask: 255.255.254.0
+  10.71.28.0-DEV1:
+    name: 10.71.28.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 514
+    startip: 10.71.28.20
+    endip: 10.71.30.200
+    gateway: 10.71.28.1
+    netmask: 255.255.252.0
+  10.73.204.0-DEV1:
+    name: 10.73.204.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 514
+    startip: 10.73.204.20
+    endip: 10.73.205.200
+    gateway: 10.73.204.1
+    netmask: 255.255.254.0
+  10.73.206.0-DEV1:
+    name: 10.73.206.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 515
+    startip: 10.73.206.20
+    endip: 10.73.207.200
+    gateway: 10.73.206.1
+    netmask: 255.255.254.0
+  10.73.208.0-DEV1:
+    name: 10.73.208.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 516
+    startip: 10.73.208.20
+    endip: 10.73.209.200
+    gateway: 10.73.208.1
+    netmask: 255.255.254.0
+  10.73.218.0-DEV1:
+    name: 10.73.218.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 518
+    startip: 10.73.218.20
+    endip: 10.73.219.200
+    gateway: 10.73.218.1
+    netmask: 255.255.254.0
+  10.71.32.0-DEV1:
+    name: 10.71.32.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 521
+    startip: 10.71.32.20
+    endip: 10.71.34.200
+    gateway: 10.71.32.1
+    netmask: 255.255.252.0
+  10.73.122.0-DEV1:
+    name: 10.73.122.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 521
+    startip: 10.73.122.20
+    endip: 10.73.123.200
+    gateway: 10.73.122.1
+    netmask: 255.255.254.0
+  10.71.36.0-DEV1:
+    name: 10.71.36.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 522
+    startip: 10.71.36.20
+    endip: 10.71.38.200
+    gateway: 10.71.36.1
+    netmask: 255.255.252.0
+  10.73.124.0-DEV1:
+    name: 10.73.124.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 522
+    startip: 10.73.124.20
+    endip: 10.73.125.200
+    gateway: 10.73.124.1
+    netmask: 255.255.254.0
+  10.73.210.0-DEV1:
+    name: 10.73.210.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 523
+    startip: 10.73.210.20
+    endip: 10.73.211.200
+    gateway: 10.73.210.1
+    netmask: 255.255.254.0
+  10.73.212.0-DEV1:
+    name: 10.73.212.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 524
+    startip: 10.73.212.20
+    endip: 10.73.213.200
+    gateway: 10.73.212.1
+    netmask: 255.255.254.0
+  10.73.214.0-DEV1:
+    name: 10.73.214.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 526
+    startip: 10.73.214.20
+    endip: 10.73.215.200
+    gateway: 10.73.214.1
+    netmask: 255.255.254.0
+  10.71.8.0-DEV1:
+    name: 10.71.8.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 526
+    startip: 10.71.8.20
+    endip: 10.71.10.200
+    gateway: 10.71.8.1
+    netmask: 255.255.252.0
+  10.73.216.0-DEV1:
+    name: 10.73.216.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 527
+    startip: 10.73.216.20
+    endip: 10.73.217.200
+    gateway: 10.73.216.1
+    netmask: 255.255.254.0
+  10.71.12.0-DEV1:
+    name: 10.71.12.0/22
+    zone: DEV1
+    domain: ROOT
+    vlan: 527
+    startip: 10.71.12.20
+    endip: 10.71.14.200
+    gateway: 10.71.12.1
+    netmask: 255.255.252.0
+  10.73.220.0-DEV1:
+    name: 10.73.220.0/24
+    zone: DEV1
+    domain: ROOT
+    vlan: 531
+    startip: 10.73.220.20
+    endip: 10.73.220.200
+    gateway: 10.73.220.1
+    netmask: 255.255.255.0
+  10.73.248.0-DEV1:
+    name: 10.73.248.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 535
+    startip: 10.73.248.20
+    endip: 10.73.249.200
+    gateway: 10.73.248.1
+    netmask: 255.255.254.0
+  10.73.246.0-DEV1:
+    name: 10.73.246.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 536
+    startip: 10.73.246.20
+    endip: 10.73.247.200
+    gateway: 10.73.246.1
+    netmask: 255.255.254.0
+  10.73.244.0-DEV1:
+    name: 10.73.244.0/24
+    zone: DEV1
+    domain: ROOT
+    vlan: 538
+    startip: 10.73.244.20
+    endip: 10.73.244.200
+    gateway: 10.73.244.1
+    netmask: 255.255.255.0
+  10.73.242.0-DEV1:
+    name: 10.73.242.0/24
+    zone: DEV1
+    domain: ROOT
+    vlan: 540
+    startip: 10.73.242.20
+    endip: 10.73.242.200
+    gateway: 10.73.242.1
+    netmask: 255.255.255.0
+  10.71.150.0-DEV1:
+    name: 10.71.150.0/24
+    zone: DEV1
+    domain: ROOT
+    vlan: 546
+    startip: 10.71.150.20
+    endip: 10.71.150.200
+    gateway: 10.71.150.1
+    netmask: 255.255.255.0
+  10.73.240.0-DEV1:
+    name: 10.73.240.0/23
+    zone: DEV1
+    domain: ROOT
+    vlan: 550
+    startip: 10.73.240.20
+    endip: 10.73.241.250
+    gateway: 10.73.240.1
+    netmask: 255.255.254.0
+  10.71.99.0-DEV1:
+    name: 10.71.99.0/24
+    zone: DEV1
+    domain: ROOT
+    vlan: 561
+    startip: 10.71.99.20
+    endip: 10.71.99.200
+    gateway: 10.71.99.1
+    netmask: 255.255.255.0
+  10.71.116.0-DEV1:
+    name: 10.71.116.0/24
+    zone: DEV1
+    domain: ROOT
+    vlan: 565
+    startip: 10.71.116.20
+    endip: 10.71.116.200
+    gateway: 10.71.116.1
+    netmask: 255.255.255.0

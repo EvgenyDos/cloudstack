@@ -1,0 +1,169 @@
+clusters:
+  pool50-ash1-cloudsys:
+    zone: ASH1
+    pod: rack-b6
+    storage:
+      - name: t500_0_fls3_pool50_root
+        url: nfs://10.74.64.207:/vol/t500_0_fls3_pool50_root
+      - name: t500_0_fls4_pool50_root
+        url: nfs://10.74.64.208:/vol/t500_0_fls4_pool50_root
+    members:
+      - pool50-kvm1.sys.ash1.cloudsys.tmcs
+      - pool50-kvm2.sys.ash1.cloudsys.tmcs
+      - pool50-kvm3.sys.ash1.cloudsys.tmcs
+      - pool50-kvm4.sys.ash1.cloudsys.tmcs
+      - pool50-kvm5.sys.ash1.cloudsys.tmcs
+      - pool50-kvm6.sys.ash1.cloudsys.tmcs
+      - pool50-kvm7.sys.ash1.cloudsys.tmcs
+      - pool50-kvm8.sys.ash1.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2
+  pool51-ash1-cloudsys:
+    zone: ASH1
+    pod: rack-b6
+    storage:
+      - name: t500_0_fls3_pool51_root
+        url: nfs://10.74.64.207:/vol/t500_0_fls3_pool51_root
+      - name: t500_0_fls4_pool51_root
+        url: nfs://10.74.64.208:/vol/t500_0_fls4_pool51_root
+    members:
+      - pool51-kvm1.sys.ash1.cloudsys.tmcs
+      - pool51-kvm2.sys.ash1.cloudsys.tmcs
+      - pool51-kvm3.sys.ash1.cloudsys.tmcs
+      - pool51-kvm4.sys.ash1.cloudsys.tmcs
+      - pool51-kvm5.sys.ash1.cloudsys.tmcs
+      - pool51-kvm6.sys.ash1.cloudsys.tmcs
+      - pool51-kvm7.sys.ash1.cloudsys.tmcs
+      - pool51-kvm8.sys.ash1.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2
+  pool52-ash1-cloudsys:
+    zone: ash1
+    pod: rack-b6
+    storage:
+      - name: t500_0_fls3_pool52_root
+        url: nfs://10.74.64.207:/vol/t500_0_fls3_pool52_root
+      - name: t500_0_fls4_pool52_root
+        url: nfs://10.74.64.208:/vol/t500_0_fls4_pool52_root
+    members:
+      - pool52-kvm1.sys.ash1.cloudsys.tmcs
+      - pool52-kvm2.sys.ash1.cloudsys.tmcs
+      - pool52-kvm3.sys.ash1.cloudsys.tmcs
+      - pool52-kvm4.sys.ash1.cloudsys.tmcs
+      - pool52-kvm5.sys.ash1.cloudsys.tmcs
+      - pool52-kvm6.sys.ash1.cloudsys.tmcs
+      - pool52-kvm7.sys.ash1.cloudsys.tmcs
+      - pool52-kvm8.sys.ash1.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2
+  pool53-ash1-cloudsys:
+    zone: ASH1
+    pod: rack-b6
+    storage:
+      - name: t500_0_fls3_pool53_root
+        url: nfs://10.74.64.207:/vol/t500_0_fls3_pool53_root
+      - name: t500_0_fls4_pool53_root
+        url: nfs://10.74.64.208:/vol/t500_0_fls4_pool53_root
+    members:
+      - pool53-kvm1.sys.ash1.cloudsys.tmcs
+      - pool53-kvm2.sys.ash1.cloudsys.tmcs
+      - pool53-kvm3.sys.ash1.cloudsys.tmcs
+      - pool53-kvm4.sys.ash1.cloudsys.tmcs
+      - pool53-kvm5.sys.ash1.cloudsys.tmcs
+      - pool53-kvm6.sys.ash1.cloudsys.tmcs
+      - pool53-kvm7.sys.ash1.cloudsys.tmcs
+      - pool53-kvm8.sys.ash1.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2
+
+  pool50-ash2-cloudsys:
+    zone: ASH2
+    pod: rack-b7
+    storage:
+      - name: t500_0_fls3_pool50_root
+        url: nfs://10.74.97.19:/vol/t500_0_fls3_pool50_root
+      - name: t500_0_fls4_pool50_root
+        url: nfs://10.74.97.18:/vol/t500_0_fls4_pool50_root
+    members:
+      - pool50-kvm1.sys.ash2.cloudsys.tmcs
+      - pool50-kvm2.sys.ash2.cloudsys.tmcs
+      - pool50-kvm3.sys.ash2.cloudsys.tmcs
+      - pool50-kvm4.sys.ash2.cloudsys.tmcs
+      - pool50-kvm5.sys.ash2.cloudsys.tmcs
+      - pool50-kvm6.sys.ash2.cloudsys.tmcs
+      - pool50-kvm7.sys.ash2.cloudsys.tmcs
+      - pool50-kvm8.sys.ash2.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2
+  pool51-ash2-cloudsys:
+    zone: ASH2
+    pod: rack-b7
+    storage:
+      - name: t500_0_fls3_pool51_root
+        url: nfs://10.74.97.19:/vol/t500_0_fls3_pool51_root
+      - name: t500_0_fls4_pool51_root
+        url: nfs://10.74.97.18:/vol/t500_0_fls4_pool51_root
+    members:
+      - pool51-kvm1.sys.ash2.cloudsys.tmcs
+      - pool51-kvm2.sys.ash2.cloudsys.tmcs
+      - pool51-kvm3.sys.ash2.cloudsys.tmcs
+      - pool51-kvm4.sys.ash2.cloudsys.tmcs
+      - pool51-kvm5.sys.ash2.cloudsys.tmcs
+      - pool51-kvm6.sys.ash2.cloudsys.tmcs
+      - pool51-kvm7.sys.ash2.cloudsys.tmcs
+      - pool51-kvm8.sys.ash2.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2
+  pool52-ash2-cloudsys:
+    zone: ASH2
+    pod: rack-b7
+    storage:
+      - name: t500_0_fls3_pool52_root
+        url: nfs://10.74.97.19:/vol/t500_0_fls3_pool52_root
+      - name: t500_0_fls4_pool52_root
+        url: nfs://10.74.97.18:/vol/t500_0_fls4_pool52_root
+    members:
+      - pool52-kvm1.sys.ash2.cloudsys.tmcs
+      - pool52-kvm2.sys.ash2.cloudsys.tmcs
+      - pool52-kvm3.sys.ash2.cloudsys.tmcs
+      - pool52-kvm4.sys.ash2.cloudsys.tmcs
+      - pool52-kvm5.sys.ash2.cloudsys.tmcs
+      - pool52-kvm6.sys.ash2.cloudsys.tmcs
+      - pool52-kvm7.sys.ash2.cloudsys.tmcs
+      - pool52-kvm8.sys.ash2.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2
+  pool53-ash2-cloudsys:
+    zone: ASH2
+    pod: rack-b7
+    storage:
+      - name: t500_0_fls3_pool53_root
+        url: nfs://10.74.97.19:/vol/t500_0_fls3_pool53_root
+      - name: t500_0_fls4_pool53_root
+        url: nfs://10.74.97.18:/vol/t500_0_fls4_pool53_root
+    members:
+      - pool53-kvm1.sys.ash2.cloudsys.tmcs
+      - pool53-kvm2.sys.ash2.cloudsys.tmcs
+      - pool53-kvm3.sys.ash2.cloudsys.tmcs
+      - pool53-kvm4.sys.ash2.cloudsys.tmcs
+      - pool53-kvm5.sys.ash2.cloudsys.tmcs
+      - pool53-kvm6.sys.ash2.cloudsys.tmcs
+      - pool53-kvm7.sys.ash2.cloudsys.tmcs
+      - pool53-kvm8.sys.ash2.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2
+  pool50-cap2-cloudsys:
+    zone: CAP2
+    pod: rack-b5
+    storage:
+      - name: t500_0_fls3_pool50_root
+        url: nfs://10.66.28.16:/vol/t500_0_fls3_pool50_root
+      - name: t500_0_fls4_pool50_root
+        url: nfs://10.66.28.17:/vol/t500_0_fls4_pool50_root
+    members:
+      - pool50-kvm2.sys.cap2.cloudsys.tmcs
+      - pool50-kvm6.sys.cap2.cloudsys.tmcs
+      - pool50-kvm7.sys.cap2.cloudsys.tmcs
+      - pool50-kvm8.sys.cap2.cloudsys.tmcs
+    tags:
+      - cpuclass=GP2

@@ -1,0 +1,9 @@
+# set tuned-adm profile to be 'virtual-host'
+- name: ensure tuned-adm profile is virtual-host
+  copy:
+    content: "virtual-host"
+    dest: /etc/tuned/active_profile
+    force: yes
+    group: root
+    owner: root
+    mode: 0644

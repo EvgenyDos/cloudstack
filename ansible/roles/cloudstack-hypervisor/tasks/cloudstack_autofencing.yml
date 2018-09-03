@@ -1,0 +1,17 @@
+##
+# Here we need to disable the cloudstack agent ont he hypervisors from
+# perfoming automatic reboots on the hypervisor if it loses connectivity
+# to the NFS storage 
+# TODO: add detailed reasoning
+#
+# This is done by change a line in the kvmheartbeat.sh file so it will call
+# /bin/true instead of 'echo b > /proc/sysrq-trigger'
+#
+- name: Update /usr/share/cloudstack-common/scripts/vm/hypervisor/kvm/kvmheartbeat.sh
+  tags: autofencing
+  lineinfile:
+    path: /usr/share/cloudstack-common/scripts/vm/hypervisor/kvm/kvmheartbeat.sh
+    regexp: '^  echo b > /proc/sysrq-trigger$'
+    line: '  /bin/true'
+    backrefs: yes
+    state: present

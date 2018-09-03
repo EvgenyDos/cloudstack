@@ -1,0 +1,7 @@
+zone_ranges:
+  ASH1:
+    pub_start_ip: 10.66.166.40
+    pub_end_ip: 10.66.166.43
+    pub_gateway: 10.66.166.1
+    pub_netmask: 255.255.254.0
+    pub_vlan: 47

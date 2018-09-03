@@ -1,0 +1,12 @@
+---
+# WARNING: These tasks should only be done during KickStart - they are NOT inteded to be safe on
+# a machine that has been fully installed/configured
+
+# Setup Main Networking - Static IP
+- import_tasks: roles/common-kickstart/tasks/networking.yml
+  tags: hostname_detection
+
+# Setup Hostname
+- import_tasks: roles/common-kickstart/tasks/hostname.yml
+  tags: hostname_detection
+

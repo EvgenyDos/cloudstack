@@ -1,0 +1,10 @@
+# Create PODs from dict
+- local_action:
+    module: cs_cluster
+    name: "{{ item.key }}"
+    zone: "{{ item.value.zone }}"
+    cluster_type: CloudManaged
+    hypervisor: KVM
+    password: CloudSTACKED!123
+    username: cloudstack
+  with_dict: "{{ clusters }}"

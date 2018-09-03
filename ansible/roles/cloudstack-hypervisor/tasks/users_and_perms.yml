@@ -1,0 +1,24 @@
+# Add Cloudstack group, may be useful later
+- name: Add Group Cloudstack
+  group:
+    name: cloudstack
+    state: present
+
+# Add Cloudstack User, uid 303
+- name: Add User Cloudstack
+  user:
+    name: cloudstack
+    shell: /bin/bash
+    groups: cloudstack
+    password: "$1$$GmC.G3dtKYpfL4SH.wAO3/"
+    uid: 303
+
+# Create Sudoers.d/cloudstack file
+- name: ensure /etc/sudoers.d/cloudsys exists
+  copy:
+    content: "%cloudstack ALL=(ALL) NOPASSWD: /usr/bin/cloudstack-setup-agent\n"
+    dest: /etc/sudoers.d/cloudstack
+    force: no
+    group: wheel
+    owner: root
+    mode: 0444

@@ -1,0 +1,61 @@
+gp1_compute_offers:
+  GP1-1-1:
+    vcpus: 1
+    mem: 1024
+    desc: "1 CPUs / 1 GB RAM"
+  GP1-2-2:
+    vcpus: 2
+    mem: 2048
+    desc: "2 CPUs / 2 GB RAM"
+  GP1-2-4:
+    vcpus: 2
+    mem: 4096
+    desc: "2 CPUs / 4 GB RAM"
+  GP1-2-6:
+    vcpus: 2
+    mem: 6144
+    desc: "2 CPUs / 6 GB RAM"
+  GP1-2-8:
+    vcpus: 2
+    mem: 8192
+    desc: "2 CPUs / 8 GB RAM"
+  GP1-4-8:
+    vcpus: 4
+    mem: 8192
+    desc: "4 CPUs / 8 GB RAM"
+  GP1-4-12:
+    vcpus: 4
+    mem: 12288
+    desc: "4 CPUs / 12 GB RAM"
+  GP1-6-12:
+    vcpus: 6
+    mem: 12288
+    desc: "6 CPUs / 12 GB RAM"
+  GP1-6-16:
+    vcpus: 6
+    mem: 16384
+    desc: "6 CPUs / 16 GB RAM"
+  GP1-6-24:
+    vcpus: 6
+    mem: 24576
+    desc: "6 CPUs / 24 GB RAM"
+  GP1-8-8:
+    vcpus: 8
+    mem: 8192
+    desc: "8 CPUs / 8 GB RAM"
+  GP1-8-16:
+    vcpus: 8
+    mem: 16384
+    desc: "8 CPUs / 16 GB RAM"
+  GP1-8-32:
+    vcpus: 8
+    mem: 32768
+    desc: "8 CPUs / 32 GB RAM"
+  GP1-12-16:
+    vcpus: 12
+    mem: 16384
+    desc: "12 CPUs / 16 GB RAM"
+  GP1-16-32:
+    vcpus: 16
+    mem: 32768
+    desc: "16 CPUs / 32 GB RAM"

@@ -1,0 +1,7 @@
+zone_ranges:
+  DEV1:
+    pub_start_ip: 10.71.159.243
+    pub_end_ip: 10.71.159.246
+    pub_gateway: 10.71.158.1
+    pub_netmask: 255.255.254.0
+    pub_vlan: 547

@@ -1,0 +1,10 @@
+- name: Install node-exporter package
+  yum: name=node_exporter state=present update_cache=yes
+
+- name: Make sure the node_exporter service is enabled on boot
+  ignore_errors: yes
+  systemd:
+    name: node_exporter
+    enabled: yes
+    state: started
+    masked: no

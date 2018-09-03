@@ -1,0 +1,7 @@
+zone_ranges:
+  PHX2:
+    pub_start_ip: 10.70.166.242
+    pub_end_ip: 10.70.166.245
+    pub_gateway: 10.70.166.1
+    pub_netmask: 255.255.254.0
+    pub_vlan: 47

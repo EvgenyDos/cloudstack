@@ -1,0 +1,7 @@
+pods:
+  rack-i124:
+    zone: DEV1
+    startip: 10.73.97.236
+    endip: 10.73.97.240
+    gateway: 10.73.96.1
+    netmask: 255.255.252.0

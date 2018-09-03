@@ -1,0 +1,47 @@
+# Configures cloudX interfaces which are user on the hypervisors only
+## WARNING:  This must only be executed during kickstart, as it depends on
+## items in 'common-kickstart' being set
+- name: Check if cloudbr interface is configured
+  stat:
+    path: /sys/devices/virtual/net/cloudbr
+  register: cloudbr_status
+
+- name: Check if cloudbr0 interface is configured
+  stat:
+    path: /sys/devices/virtual/net/cloudbr0
+  register: cloudbr0_status
+
+- name: Check if mgmt0 interface is configured
+  stat:
+    path: /sys/devices/virtual/net/mgmt0
+  register: mgmt0_status
+
+- name: Check if storagebr0 interface is configured
+  stat:
+    path: /sys/devices/virtual/net/storagebr0
+  register: storagebr0_status
+
+- name: Setup Interface - cloudbr
+  template: src=ifcfg-cloudbr.j2 dest=/etc/sysconfig/network-scripts/ifcfg-cloudbr
+  when: cloudbr_status.stat.isdir is not defined
+  tags: ks_networking
+
+- name: Setup Interface - cloudbr0
+  template: src=ifcfg-cloudbr0.j2 dest=/etc/sysconfig/network-scripts/ifcfg-cloudbr0
+  when: cloudbr0_status.stat.isdir is not defined
+  tags: ks_networking
+
+- name: Setup Interface - mgmt0
+  template: src=ifcfg-mgmt0.j2 dest=/etc/sysconfig/network-scripts/ifcfg-mgmt0
+  when: mgmt0_status.stat.isdir is not defined
+  tags: ks_networking
+
+- name: Setup Interface - storagebr0
+  template: src=ifcfg-storagebr0.j2 dest=/etc/sysconfig/network-scripts/ifcfg-storagebr0
+  when: storagebr0_status.stat.isdir is not defined
+  tags: ks_networking
+
+- name: Setup Interface - publicbr0
+  template: src=ifcfg-publicbr0.j2 dest=/etc/sysconfig/network-scripts/ifcfg-publicbr0
+  when: publicbr0_status.stat.isdir is not defined
+  tags: ks_networking

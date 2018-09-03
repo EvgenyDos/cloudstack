@@ -1,0 +1,8 @@
+---
+- name:
+  hosts: controller
+  connection: local
+  vars:
+    CLOUDSTACK_TIMEOUT: 120
+  roles:
+    - cloudstack-pods

@@ -1,0 +1,27 @@
+- name: Install rsyslog prod config file.
+  when:
+   - tm_environment == "PROD"
+  copy:
+   src: roles/common/files/rsyslog-prod.conf
+   dest: /etc/rsyslog.conf
+   owner: root
+   group: root
+   mode: 0644
+
+- name: Install rsyslog non prod config file.
+  when:
+   - tm_environment == "NONPROD"
+  copy:
+   src: roles/common/files/rsyslog-nonprod.conf
+   dest: /etc/rsyslog.conf
+   owner: root
+   group: root
+   mode: 0644
+
+- name: Restart rsyslogd 
+  ignore_errors: yes
+  systemd:
+    name: rsyslog
+    enabled: yes
+    state: started
+    daemon_reload: yes

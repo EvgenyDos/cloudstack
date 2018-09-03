@@ -1,0 +1,8 @@
+- name: Add public IP range to zones
+  shell: >
+    cs createVlanIpRange physicalnetworkid="{{ netid }}"
+    zoneid="{{ zone.ansible_facts.cloudstack_zone.id }}"
+    startip="{{ item.value.pub_start_ip }}" endip="{{ item.value.pub_end_ip}}"
+    vlan="{{ item.value.pub_vlan }}" gateway="{{ item.value.pub_gateway }}"
+    netmask="{{ item.value.pub_netmask }}" forVirtualNetwork=true
+  
