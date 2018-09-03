@@ -1,9 +1,0 @@
-DEVICE=bond0
-ONBOOT=yes
-DEVICETYPE=ovs
-TYPE=OVSBond
-OVS_BRIDGE=cloudbr
-BOOTPROTO=none
-BOND_IFACES="{{ tm_primary_interface }} {{ tm_secondary_interface }}"
-OVS_OPTIONS="bond_mode=balance-slb other_config:bond-rebalance-interval=60000"
-NM_CONTROLLED=no

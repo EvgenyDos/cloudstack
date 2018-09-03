@@ -1,8 +1,0 @@
-- name: Copy CentOS repo files
-  copy:
-    src: "{{ item }}"
-    dest: "/etc/yum.repos.d"
-    owner: root
-    mode: 0644
-  with_fileglob:
-   - "roles/common/files/CentOS*.repo"

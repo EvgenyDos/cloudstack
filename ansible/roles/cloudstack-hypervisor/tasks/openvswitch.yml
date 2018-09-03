@@ -1,8 +1,0 @@
-
-- name: Make sure the OpenVSwitch service is enabled on boot
-  ignore_errors: yes
-  systemd: 
-    name: openvswitch
-    enabled: yes
-    state: started
-    masked: no

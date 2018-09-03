@@ -1,6 +1,0 @@
-# LibVirt config
-- name: Put our /etc/libvirt/libvirtd.conf in place
-  template: src=libvirtd.conf.j2 dest=/etc/libvirt/libvirtd.conf
-
-- name: Put our /etc/sysconfig/libvirtd in place
-  template: src=libvirtd.sysconfig.j2 dest=/etc/sysconfig/libvirtd

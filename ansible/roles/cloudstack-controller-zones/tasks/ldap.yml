@@ -1,3 +1,0 @@
-- name: Add LDAP endpoints to zones
-  shell: >
-    cs addLdapConfiguration hostname="{{ ldap_server }}" port=389

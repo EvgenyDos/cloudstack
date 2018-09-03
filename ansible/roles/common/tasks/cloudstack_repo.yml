@@ -1,2 +1,0 @@
-- name: Ensure the Apache Cloudstack Repo file exists as per template
-  template: src=cloudstack.repo.j2 dest=/etc/yum.repos.d/cloudstack.repo

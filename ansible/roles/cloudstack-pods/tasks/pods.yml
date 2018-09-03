@@ -1,9 +1,0 @@
-- local_action:
-    module: cs_pod
-    name: "{{ item.key }}"
-    zone: "{{ item.value.zone }}"
-    start_ip: "{{item.value.startip}}"
-    end_ip: "{{item.value.endip}}"
-    netmask: "{{item.value.netmask}}"
-    gateway: "{{item.value.gateway}}"
-  with_dict: "{{ pods }}"
